@@ -1,0 +1,50 @@
+.navbar {
+  border: 0px;
+}
+
+.active{
+  //color: #70a1ff;
+  color: red;
+}
+
+.navbar-default {
+  background: #094182;
+  overflow: hidden;
+
+  .nav-logo {
+    margin-top: -10px;
+  }
+
+  .navbar-right {
+
+    li {
+      a:visited {
+        color: #dfe4ea;
+      }
+
+      a {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        transition: .3s;
+
+        &:hover{
+          color: #70a1ff;
+        }
+      }
+    }
+
+    .signup {
+      display: block;
+      margin-top: 10px;
+      height: 10px;
+      line-height: 1px;
+      background: #48dbfb;
+      transition: .5s;
+
+      &:hover {
+        background: #5352ed;
+      }
+    }
+  }
+}
