@@ -11,6 +11,22 @@
 .navbar-default .nav-logo {
   margin-top: -10px;
 }
+.navbar-default .navbar-left {
+  position: relative;
+}
+.navbar-default .navbar-left .navbar-search {
+  border: none;
+  border-radius: 0;
+  background: #1d5493;
+}
+.navbar-default .navbar-left .navbar-searchbtn {
+  position: absolute;
+  border: none;
+  border-radius: 0;
+  background: #1d5493;
+  color: #dfe4ea;
+  right: 15px;
+}
 .navbar-default .navbar-right li a:visited {
   color: #dfe4ea;
 }
