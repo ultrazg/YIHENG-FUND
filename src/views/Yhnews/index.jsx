@@ -10,22 +10,22 @@ class Index extends Component {
       news: [
         {
           date: '2020-08-09',
-          title: '这是新闻标题1',
+          title: '新闻标题1',
           link: 'https://www.baidu.com'
         },
         {
           date: '2020-08-10',
-          title: '这是新闻标题2',
+          title: '新闻标题2',
           link: 'https://www.baidu.com'
         },
         {
           date: '2020-08-11',
-          title: '这是新闻标题3',
+          title: '新闻标题3',
           link: 'https://www.baidu.com'
         },
         {
           date: '2020-08-12',
-          title: '这是新闻标题4',
+          title: '新闻标题4',
           link: 'https://www.baidu.com'
         }
       ]
@@ -36,7 +36,8 @@ class Index extends Component {
     return (
       <div>
         <div className="news-layout container">
-          <h3>行业新闻</h3>
+          <h3>毅恒新闻</h3>
+          <p>这里发布毅恒内的新鲜事</p>
           <div className="content">
 
             {/*列表循环 start*/}

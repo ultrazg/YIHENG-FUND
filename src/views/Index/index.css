@@ -46,6 +46,8 @@
 }
 .pro-layout h2 {
   text-align: left;
+  padding-left: 10px;
+  border-left: 5px solid #093569;
 }
 .pro-layout .icon {
   margin-top: 25px;
@@ -80,6 +82,8 @@
 }
 .case-layout h2 {
   text-align: left;
+  padding-left: 10px;
+  border-left: 5px solid #093569;
 }
 .case-layout .lists {
   text-align: center;
@@ -99,6 +103,8 @@
 }
 .cooperation-layout h2 {
   text-align: left;
+  padding-left: 10px;
+  border-left: 5px solid #093569;
 }
 .cooperation-layout .icons {
   text-align: center;
@@ -118,5 +124,27 @@
 .cooperation-layout .icons .icon p {
   font-weight: 300;
   user-select: none;
+}
+.hot-layout {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.hot-layout h2 {
+  padding-left: 10px;
+  border-left: 5px solid #093569;
+}
+.hot-layout .content {
+  margin-top: 25px;
+}
+.hot-layout .content th,
+.hot-layout .content td {
+  text-align: center;
+}
+.hot-layout .content td > a {
+  color: red;
+  transition: 0.3s;
+}
+.hot-layout .content td > a:hover {
+  color: pink;
 }
 /*# sourceMappingURL=index.css.map */

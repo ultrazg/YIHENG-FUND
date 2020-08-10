@@ -6,7 +6,9 @@ import logo from '../../images/logo.png';
 import {Link} from "react-router-dom";
 
 class Index extends Component {
+
   render() {
+
     return (
       <div className='footer-layout'>
         <div className="container">
@@ -15,9 +17,9 @@ class Index extends Component {
           </div>
           <div className="list col-xs-6 col-sm-3">
             <ul>
-              <li><strong>我们的市场</strong></li>
+              <li><strong>产品认购</strong></li>
               <li>
-                <Link to='#'>链接</Link>
+                <Link to='/chaoshi'>基金超市</Link>
               </li>
             </ul>
           </div>
@@ -59,9 +61,9 @@ class Index extends Component {
         </div>
 
         <div className="info container">
-              <Link to='/risk'>风险揭示书 </Link><label>|</label>
-              <Link to='/privacy'> 隐私条款 </Link><label>|</label>
-              <Link to='/complaint'> 投诉建议</Link>
+          <Link to='/risk'>风险揭示书 </Link><label>|</label>
+          <Link to='/privacy'> 隐私条款 </Link><label>|</label>
+          <Link to='/complaint'> 投诉建议</Link>
         </div>
 
         <div className="copyright container">

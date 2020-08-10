@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import './index.css';
 
-import Footer from '../../components/Footer';
 
 import a1URL from '../../images/a1.jpg';
 import a2URL from '../../images/a2.jpg';
@@ -23,7 +22,7 @@ class Index extends Component {
               毅恒基金拥有卓越的平台、雄厚的实力以及良好的声誉，汇聚了大批优秀的研究员及基金经理，选拔了海内外知名机构的优秀人才，构建了精英荟萃的投研平台，逐步形成了业内规模强大的投资团队，并形成了稳定而长远的投资管理模式。
             </p>
             <p className="info2">
-              在私募基金方面，毅恒基金建立了完善的基金产品线，管理过私募基金超过<span> 60 </span>只，服务过的客户超过<span> 10000 </span>人次，可以满足不同投资者的各类投资需求。管理的基金囊括了货币型、理财型、债券型、混合型以及<span> PE </span>股权型等<span> 5 </span>大类不同风险收益特征的品种。
+              在私募基金方面，毅恒基金建立了完善的基金产品线，管理过私募基金超过<span> 60 </span>只，服务过的客户超过<span> 10000 </span>人次，可以满足不同投资者的各类投资需求。管理的基金囊括了货币型、理财型、债券型、混合型以及PE股权型等<span> 5 </span>大类不同风险收益特征的品种。
             </p>
           </div>
 
@@ -39,7 +38,7 @@ class Index extends Component {
             </div>
           </div>
         </div>
-        <Footer/>
+
       </div>
     );
   }

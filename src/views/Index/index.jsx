@@ -15,9 +15,28 @@ import img8 from '../../images/8.png';
 import img9 from '../../images/9.png';
 import img10 from '../../images/10.png';
 
-import Footer from '../../components/Footer';
 
 class Index extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      hots: [
+        {
+          pic: 'http://www.ipoinchina.com/images/202006/goods_img/76_G_1592130985668.jpg',
+          name: '港股打新5号',
+          guimo: '5000万元',
+          hangye: '生物制药、5G、通信',
+          guanliren: '毅恒基金',
+          qixian: '12个月+6个月',
+          shouyi: '年化8%+浮动',
+          qigou: '10万元+',
+          link: 'https://www.baidu.com'
+        }
+      ],
+    }
+  }
+
   render() {
     return (
       <div>
@@ -30,7 +49,8 @@ class Index extends Component {
           </div>
         </div>
         <div className="kaihu">
-          <span>我要开户</span><input placeholder='手机号码' type="text"/><button>开户</button>
+          <span>我要开户</span><input placeholder='手机号码' type="text"/>
+          <button>开户</button>
         </div>
         {/*首页视频/图片 end*/}
 
@@ -84,6 +104,46 @@ class Index extends Component {
         </div>
         {/*成功案例组件 end*/}
 
+        {/*热销 start*/}
+        <div className="hot-layout container">
+          <h2>热销基金</h2>
+          <div className="content">
+            {/*IPO打新基金列表循环 start*/}
+            {
+              this.state.hots.map((item, index) => (
+                <table className="table table-striped">
+                  <thead>
+                  <tr>
+                    <th>基金名称</th>
+                    <th>募集规模</th>
+                    <th>投资行业</th>
+                    <th>管理人</th>
+                    <th>投资期限</th>
+                    <th>预期收益</th>
+                    <th>起购金额</th>
+                    <th>操作</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>{item.name}</td>
+                    <td>{item.guimo}</td>
+                    <td>{item.hangye}</td>
+                    <td>{item.guanliren}</td>
+                    <td>{item.qixian}</td>
+                    <td>{item.shouyi}</td>
+                    <td>{item.qigou}</td>
+                    <td><a href={item.link}>购买</a></td>
+                  </tr>
+                  </tbody>
+                </table>
+              ))
+            }
+            {/*IPO打新基金列表循环 end*/}
+          </div>
+        </div>
+        {/*热销 end*/}
+
         {/*合作单位组件 start*/}
         <div className="cooperation-layout container">
           <h2>合作单位</h2>
@@ -134,9 +194,6 @@ class Index extends Component {
         </div>
         {/*合作单位组件 end*/}
 
-        {/*Footer component start*/}
-        <Footer/>
-        {/*Footer component end*/}
 
       </div>
     );

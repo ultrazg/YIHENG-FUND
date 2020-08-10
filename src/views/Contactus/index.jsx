@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 
 import './index.css';
 
-import Footer from '../../components/Footer';
-
 class Index extends Component {
   render() {
     return (
@@ -31,7 +29,6 @@ class Index extends Component {
 
           </div>
         </div>
-        <Footer/>
       </div>
     );
   }
