@@ -1,4 +1,32 @@
 .user-layout {
   margin-top: 50px;
 }
+.user-layout .background-img {
+  background: white url("../../images/backgroundimg.png") no-repeat center 0%;
+}
+.user-layout .background-img .header-layout {
+  padding: 50px 0;
+}
+.user-layout .background-img .header-layout img {
+  width: 150px;
+  border-radius: 50%;
+  border: 7px solid #f1f2f6;
+  margin: 0 auto;
+}
+.user-layout .background-img .header-layout .username {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.user-layout .background-img .header-layout h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.user-layout .background-img .header-layout h4 p {
+  font-size: 15px;
+}
+.user-layout .background-img .header-layout th,
+.user-layout .background-img .header-layout td {
+  text-align: center;
+}
 /*# sourceMappingURL=index.css.map */
