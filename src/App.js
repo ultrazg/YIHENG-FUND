@@ -17,6 +17,7 @@ import Risk from './views/Risk';
 import Privacy from './views/Privacy';
 import Complaint from './views/Complaint';
 import User from './views/User';
+import UserOrder from './views/UserOrder';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
           <Route path='/risk' component={Risk}/>
           <Route path='/privacy' component={Privacy}/>
           <Route path='/complaint' component={Complaint}/>
-          <Route path='/user' component={User}/>
+          <Route path='/user' exact component={User}/>
+          <Route path='/user/order' exact component={UserOrder}/>
         </Switch>
 
         <Footer/>
