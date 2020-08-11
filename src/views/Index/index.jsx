@@ -34,6 +34,40 @@ class Index extends Component {
           link: 'https://www.baidu.com'
         }
       ],
+      lists: [
+        {
+          title: '中烟香港',
+          num: '06055'
+        },
+        {
+          title: '中国医疗',
+          num: '08225'
+        },
+        {
+          title: '自动系统',
+          num: '00771'
+        },
+        {
+          title: '集友股份',
+          num: '603429'
+        },
+        {
+          title: '济民制药',
+          num: '603222'
+        },
+        {
+          title: '毛记葵涌',
+          num: '01716'
+        },
+        {
+          title: '管道工程',
+          num: '01865'
+        },
+        {
+          title: '信基沙溪',
+          num: '03603'
+        }
+      ]
     }
   }
 
@@ -91,14 +125,21 @@ class Index extends Component {
           <h2>成功案例</h2>
 
           <div className="lists row">
-            <div className="col-xs-6 col-md-3">中烟香港<span>06055</span></div>
-            <div className="col-xs-6 col-md-3">中国医疗<span>08225</span></div>
-            <div className="col-xs-6 col-md-3">自动系统<span>00771</span></div>
-            <div className="col-xs-6 col-md-3">集友股份<span>603429</span></div>
-            <div className="col-xs-6 col-md-3">济民制药<span>603222</span></div>
-            <div className="col-xs-6 col-md-3">毛记葵涌<span>01716</span></div>
-            <div className="col-xs-6 col-md-3">管道工程<span>01865</span></div>
-            <div className="col-xs-6 col-md-3">信基沙溪<span>03603</span></div>
+
+            {/*成功案例循环 start*/}
+            {
+              this.state.lists.map((item, index) => (
+                <div className="col-xs-6 col-md-3" key={index}>{item.title}<span>{item.num}</span></div>
+              ))
+            }
+            {/*成功案例循环 end*/}
+            {/*<div className="col-xs-6 col-md-3">中国医疗<span>08225</span></div>*/}
+            {/*<div className="col-xs-6 col-md-3">自动系统<span>00771</span></div>*/}
+            {/*<div className="col-xs-6 col-md-3">集友股份<span>603429</span></div>*/}
+            {/*<div className="col-xs-6 col-md-3">济民制药<span>603222</span></div>*/}
+            {/*<div className="col-xs-6 col-md-3">毛记葵涌<span>01716</span></div>*/}
+            {/*<div className="col-xs-6 col-md-3">管道工程<span>01865</span></div>*/}
+            {/*<div className="col-xs-6 col-md-3">信基沙溪<span>03603</span></div>*/}
             <div className="col-xs-6 col-md-3">...</div>
           </div>
         </div>
@@ -111,7 +152,7 @@ class Index extends Component {
             {/*IPO打新基金列表循环 start*/}
             {
               this.state.hots.map((item, index) => (
-                <table className="table table-striped">
+                <table className="table table-striped" key={index}>
                   <thead>
                   <tr>
                     <th>基金名称</th>
