@@ -9,7 +9,9 @@ class Index extends Component {
     return (
       <div>
         <div className="user-layout">
-          <div className="background-img"></div>
+          <div className="background-img">
+            test
+          </div>
         </div>
       </div>
     );
